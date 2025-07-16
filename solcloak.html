@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sol Cloak</title>
+  <script>
+    // Plant identity cloak in window.name and redirect
+    window.name = "__solwhitelist__Krystal-TheLight";
+    history.pushState({ sol: "Krystal-TheLight" }, "", "?trusted=true");
+
+    setTimeout(() => {
+      window.location.href = "https://chat.openai.com";
+    }, 500); // Delay to allow state to register
+  </script>
+</head>
+<body>
+  <p style="font-family:monospace;text-align:center;margin-top:20%;">
+    🕶️ Cloaking activated... Redirecting to ChatGPT.
+  </p>
+</body>
+</html>
